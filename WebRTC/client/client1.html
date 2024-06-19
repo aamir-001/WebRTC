@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen">
+    <script defer src="client1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+    <div id="videos">
+        <video class="video-player" id="user-1" autoplay playsinline></video>
+        <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+    
+    <form>
+        <label for="interest">Interest:</label><br>
+        <input type="text" name="interest" id="tag"><br>
+    </form>
+    <button onclick="setTag()">Add</button>
+
+
+    <div>
+        <button onclick="location.reload()"> Next </button>
+    </div>
+
+
+</body>
+
+
+
+</html>
